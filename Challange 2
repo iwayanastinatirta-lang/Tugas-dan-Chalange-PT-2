@@ -1,0 +1,5 @@
+age = int(input("Masukan umur anda: "))
+if age >= 17:
+    print("Kamu cukup umur")
+else:
+    print("Kamu belum cukup umur")
