@@ -1,0 +1,38 @@
+import random
+
+# Pilihan yang tersedia
+pilihan = ["batu", "gunting", "kertas"]
+
+# Input dari pemain
+pemain = input("Pilih batu, gunting, atau kertas: ").lower()
+
+# Pilihan komputer (acak)
+komputer = random.choice(pilihan)
+
+print("Pilihan kamu    :", pemain)
+print("Pilihan komputer:", komputer)
+
+# Menentukan pemenang
+if pemain == komputer:
+    print("Hasil: Seri 🤝")
+
+elif pemain == "batu":
+    if komputer == "gunting":
+        print("Hasil: Kamu menang 🎉")
+    else:
+        print("Hasil: Kamu kalah 😢")
+
+elif pemain == "gunting":
+    if komputer == "kertas":
+        print("Hasil: Kamu menang 🎉")
+    else:
+        print("Hasil: Kamu kalah 😢")
+
+elif pemain == "kertas":
+    if komputer == "batu":
+        print("Hasil: Kamu menang 🎉")
+    else:
+        print("Hasil: Kamu kalah 😢")
+
+else:
+    print("Input tidak valid! Pilih batu, gunting, atau kertas.")
