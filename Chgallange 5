@@ -1,0 +1,5 @@
+age = 18
+passed_test = True
+
+if age >= 17 and passed_test == True:
+    print("sudah bikin sim")
